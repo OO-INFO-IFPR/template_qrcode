@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.efigenio.controllers.PixTelaController" spacing="10" alignment="CENTER">
+    <Label text="Gerador de QR Code PIX" style="-fx-font-size: 18px;"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Valor: " />
+        <TextField fx:id="valorField" promptText="Digite o valor" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Descrição: " />
+        <TextField fx:id="descricaoField" promptText="Digite a descrição" />
+    </HBox>
+    <Button text="Gerar QR Code" onAction="#gerarPix" />
+    <ImageView fx:id="qrCodeImage" fitWidth="200" fitHeight="200" />
+</VBox>
